@@ -77,7 +77,7 @@ def register_user(username, password):
     # Nếu tên người dùng chưa tồn tại, lưu thông tin vào file
     with open('accounts.txt', 'a') as file:
         file.write(f"{username},{password}\n")
-    
+
     messagebox.showinfo("Thông báo", "Đăng ký thành công! Vui lòng đăng nhập.")
     return True
 
